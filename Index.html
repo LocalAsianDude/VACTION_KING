@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body
+        {
+            background-image: url('Background-pic.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .container
+        {
+          padding: 50px 0 50px 0;
+            width:1240px;
+            height:1200px;
+            margin:auto;
+            display:grid;            
+            grid-template-columns:4fr 1fr ;
+            grid-template-rows: 0.75fr 0.5fr 4fr 1.5fr;
+            grid-gap:10px;
+            grid-template-areas:
+            "logo logo"
+            "header header"
+            "menu right"
+            "about about"
+        }
+        
+
+        .logo
+        {
+            background-color: #333;
+            grid-area: logo;
+            background-color: white;
+            border: 3px solid #333;
+        }
+        .header
+        {
+
+            grid-area: header;
+            background-color: white;
+            border: 3px solid #333;
+        }
+        .menu
+        {
+            border-radius:40px;
+            grid-area: menu;
+            background-color: white;
+            border: 3px solid #333;
+        }
+        .right
+        {
+          border-radius:40px;
+            grid-area: right;
+            background-color: white;
+            border: 3px solid black;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+        .about
+        {
+
+            grid-area: about;
+            background-color: white;
+            border: 3px solid black;
+        }
+        .header .navbar 
+        {
+          
+        background-color: #333;
+        }
+        .header .navbar a 
+        {
+        margin: auto;
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 80px 18px 80px;
+        text-decoration: none;
+        }
+        /*
+        .header .navbar a:hover
+        {
+            background-color:white;
+        }   
+        .header .navbar .dropdown a:hover
+        {
+            background-color:lime;
+        }
+        */
+
+    </style>
+    <title>MAIN MENU</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="logo">
+            <nav class="navbar navbar-expand-lg navbar-light background-color: white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="LOGO MAIN.png">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        VACATION KING
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                            <li class="nav-item"></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item dropdown"></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul>
+                            <li></li>
+                            <li class="nav-item"></li>
+                        </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-primary" type="submit"><a style="text-decoration: none;" href="file:///D:/TK_WEB/Project/Sign%20up.html">SIGN UP</a></button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button class="btn btn-outline-info" type="submit"><a style="text-decoration: none;" href="file:///D:/TK_WEB/Project/Login.html">LOG IN</a></button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="header">
+            <div class="navbar">
+                <a href="#home">🏠</a>
+                <a href="file:///D:/TK_WEB/Project/Product.html">🎫 </a>
+                <a href="file:///D:/TK_WEB/Project/Service%20list.html">🚗&nbsp;|&nbsp;🧥</a>
+
+                <div class="dropdown">
+                  <a class="btn btn-#333 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    ⚙️
+                  </a>
+                
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a style="color:blue" class="dropdown-item" href="#">Technical Support</a></li>
+                    <li><a style="color:blue" class="dropdown-item" href="#">Questions</a></li>
+                    <li><a style="color:blue" class="dropdown-item" href="#">Setting</a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div style="border: 5px solid ; border-radius:35px;overflow: hidden;width:auto;height: auto; " id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Nha Trang.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="text-align:right;font-family: 'Times New Roman', Times, serif;color:rgb(12, 12, 214);font-size:40">NHA TRANG</h5>
+                      <p style="text-align:right;color:cyan"><i>One of the best beaches in Vietnam</i></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Da Lat.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="text-align:right;font-family: 'Times New Roman', Times, serif;color:rgb(238, 91, 6);font-size:40">DA LAT</h5>
+                      <p style="text-align:right;color:rgb(231, 235, 21)"><i>Best place to go out with the love of your life</i></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Da Nang.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="text-align:right;font-family: 'Times New Roman', Times, serif;color:greenyellow;font-size:40">DA NANG</h5>
+                      <p style="text-align:right;color:pink"><i>Having fun at both night and day time</i></p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text">
+                <a style="text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="overflow:visible" src="Fallout.png"></a>
+            </div>
+        </div>
+        <div class="right">
+        </br>
+        </br>
+            <p style="font-size:50px;font-weight:bolder;color:blue">NEWS</p>
+        </br>
+        </br>
+            <p style="font-size:15px;"><a href="#" style="text-decoration: none;color:cyan;font-weight:bold">BEST PLACE TO VISIT IN 2022</a></p>
+            &nbsp;
+            <p style="font-size:15px;"><a href="#" style="text-decoration: none;color:cyan;font-weight:bold">TOP 10 MOST VISITED PLACES IN VIETNAM</a></p>
+            &nbsp;
+            <p style="font-size:15px;"><a href="#" style="text-decoration: none;color:cyan;font-weight:bold">JOIN IN THE FUN IN THE SEAGAME31</a></p>
+            &nbsp;
+            <p style="font-size:15px;"><a href="#" style="text-decoration: none;color:cyan;font-weight:bold">EPIC FORTNITE MOMENTS</a></p>
+            &nbsp;
+            <p style="font-size:15px;"><a href="#" style="text-decoration: none;color:cyan;font-weight:bold">I FOUND AMONG US</a></p>
+            &nbsp;
+            <p style="font-size:15px;"><a href="#" style="text-decoration: none;color:cyan;font-weight:bold">TOP 5 MOST BEAUTIFUL PLACES IN VIETNAM</a></p>
+            &nbsp;
+        </br>
+            <p><img src="LOGO MAIN.png"></p>
+        </div>
+        <div class="about">
+          &nbsp;<p style="text-align:center;font-size:30px;color:red;font-weight:bold">ABOUT US</p>
+          <p>&nbsp;<a><b>OTHER SERVICE:</b></a>        <a style="float:right"><i>HOTEL RENT | CLOTHES SHOP | SELLING GUN&nbsp;</i></a></p>
+          <p>&nbsp;<a><b>COMPANY:</b></a>              <a style="float:right"><i>THE ULTIMATE KING COMPANY&nbsp;</i></a></p>
+          <p>&nbsp;<a><b>LOACTION:</b></a>             <a style="float:right"><i>69/420/Somewhere on Earth&nbsp;</i></a></p>
+          <p>&nbsp;<a><b>THE PROJECT TEAM:</b></a>     <a href="file:///D:/TK_WEB/Project/About.html" style="float:right;text-decoration: none;"><i>GROUP 5&nbsp;</i></a></p>
+          <p>&nbsp;<a><b>SOCIAL MEDIA:</b></a>         
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a>
+            <a style="text-align:right" href="#" title="facebook icons"><img src="FB.png"></a>&nbsp;&nbsp;
+            <a style="text-align:right" href="#" title="youtube icons"><img src="YT.png"></a>&nbsp;&nbsp;
+            <a style="text-align:right" href="#" title="social icons"><img src="TW.png"></a>&nbsp;&nbsp;
+            <a style="text-align:right" href="#" title="ing icons"><img src="IN.png"></a>
+            </a></p>
+          <p>&nbsp;<a><b>CONTACT US:</b></a>           <a style="float:right"><i>NUMBER: XXX XXXX XXX | GMAIL: ######@gmail.com</i></a></p>&nbsp;
+        </div>
+    </div>
+  </body>
+</html>
